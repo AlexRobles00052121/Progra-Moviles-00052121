@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         addDollarIB.setOnClickListener{addMoney(1.00)}
     }
 
+
     private fun addMoney(totalCount: Double){
         counterMoney += totalCount
         counterTV.text= getString(R.string.money_value, String.format("%.2f", counterMoney))
